@@ -5,28 +5,58 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="664.0"
-      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arraygui.arrayController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arraygui.arrayController">
     <children>
+      <ImageView fitHeight="675.0" fitWidth="1176.0" layoutX="-232.0" layoutY="-27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../6a3a9aa650f610536f40bedc3e988365.jpg" />
+         </image>
+      </ImageView>
         <ListView fx:id="lst1Array" layoutX="22.0" layoutY="43.0" prefHeight="559.0" prefWidth="84.0" />
         <ListView fx:id="lst2Array" layoutX="149.0" layoutY="43.0" prefHeight="559.0" prefWidth="84.0" />
-        <RadioButton fx:id="rdb1Action" layoutX="277.0" layoutY="62.0" mnemonicParsing="false" text="Display Array" />
-        <RadioButton fx:id="rdb2Action" layoutX="277.0" layoutY="107.0" mnemonicParsing="false" text="Add" />
-        <RadioButton fx:id="rdb3Action" layoutX="277.0" layoutY="155.0" mnemonicParsing="false" text="Delete" />
-        <RadioButton fx:id="rdb4Action" layoutX="277.0" layoutY="197.0" mnemonicParsing="false" text="Sort" />
-        <RadioButton fx:id="rdb5Action" layoutX="278.0" layoutY="243.0" mnemonicParsing="false" text="Display Size" />
-        <RadioButton fx:id="rdb6Action" layoutX="278.0" layoutY="295.0" mnemonicParsing="false" text="Search" />
+        <RadioButton fx:id="rdb1Action" layoutX="277.0" layoutY="62.0" mnemonicParsing="false" text="Display Array" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+        <RadioButton fx:id="rdb2Action" layoutX="277.0" layoutY="107.0" mnemonicParsing="false" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+        <RadioButton fx:id="rdb3Action" layoutX="277.0" layoutY="155.0" mnemonicParsing="false" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+        <RadioButton fx:id="rdb4Action" layoutX="277.0" layoutY="197.0" mnemonicParsing="false" text="Sort" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+        <RadioButton fx:id="rdb5Action" layoutX="278.0" layoutY="243.0" mnemonicParsing="false" text="Display Size" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+        <RadioButton fx:id="rdb6Action" layoutX="278.0" layoutY="295.0" mnemonicParsing="false" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
 
         <TextField fx:id="txtIndex" layoutX="430.0" layoutY="357.0" />
-        <Button fx:id="btnDoAction" layoutX="277.0" layoutY="476.0" mnemonicParsing="false" onAction="#performAction" prefHeight="25.0"
-                prefWidth="157.0" text="Do" />
+        <Button fx:id="btnDoAction" layoutX="277.0" layoutY="476.0" mnemonicParsing="false" onAction="#performAction" prefHeight="25.0" prefWidth="157.0" text="Do" />
 
-        <Label layoutX="25.0" layoutY="14.0" text="Original Array:" />
-        <Label layoutX="157.0" layoutY="14.0" text="Sorted Array:" />
-        <Label layoutX="275.0" layoutY="361.0" text="Enter index:" />
-        <Label layoutX="276.0" layoutY="413.0" text="Enter a number:" />
+        <Label layoutX="25.0" layoutY="14.0" text="Original Array:" textFill="WHITE" />
+        <Label layoutX="157.0" layoutY="14.0" text="Sorted Array:" textFill="WHITE" />
+        <Label layoutX="275.0" layoutY="361.0" text="Enter index:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+        <Label layoutX="276.0" layoutY="413.0" text="Enter a number:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
         <TextField fx:id="txtSearchNbr" layoutX="429.0" layoutY="409.0" />
     </children>
 </Pane>
