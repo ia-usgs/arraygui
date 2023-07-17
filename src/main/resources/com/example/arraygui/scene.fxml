@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.arraygui.arrayController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="664.0"
+      xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.arraygui.arrayController">
+    <children>
+        <ListView fx:id="lst1Array" layoutX="22.0" layoutY="43.0" prefHeight="559.0" prefWidth="84.0" />
+        <ListView fx:id="lst2Array" layoutX="149.0" layoutY="43.0" prefHeight="559.0" prefWidth="84.0" />
+        <RadioButton fx:id="rdb1Action" layoutX="277.0" layoutY="62.0" mnemonicParsing="false" text="Display Array" />
+        <RadioButton fx:id="rdb2Action" layoutX="277.0" layoutY="107.0" mnemonicParsing="false" text="Add" />
+        <RadioButton fx:id="rdb3Action" layoutX="277.0" layoutY="155.0" mnemonicParsing="false" text="Delete" />
+        <RadioButton fx:id="rdb4Action" layoutX="277.0" layoutY="197.0" mnemonicParsing="false" text="Sort" />
+        <RadioButton fx:id="rdb5Action" layoutX="278.0" layoutY="243.0" mnemonicParsing="false" text="Display Size" />
+        <RadioButton fx:id="rdb6Action" layoutX="278.0" layoutY="295.0" mnemonicParsing="false" text="Search" />
+
+        <TextField fx:id="txtIndex" layoutX="430.0" layoutY="357.0" />
+        <Button fx:id="btnDoAction" layoutX="277.0" layoutY="476.0" mnemonicParsing="false" onAction="#performAction" prefHeight="25.0"
+                prefWidth="157.0" text="Do" />
+
+        <Label layoutX="25.0" layoutY="14.0" text="Original Array:" />
+        <Label layoutX="157.0" layoutY="14.0" text="Sorted Array:" />
+        <Label layoutX="275.0" layoutY="361.0" text="Enter index:" />
+        <Label layoutX="276.0" layoutY="413.0" text="Enter search number:" />
+        <TextField fx:id="txtSearchNbr" layoutX="429.0" layoutY="409.0" />
+    </children>
+</Pane>
